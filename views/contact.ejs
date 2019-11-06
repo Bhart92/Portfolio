@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+
+<section id="contactSection">
+  <div id="innerContactContainer">
+    <form id="contactForm" action="/" method="post">
+      <h1>Shoot me a <span>message</span>!</h1>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" maxlength="250" minlength="4" required></textarea>
+      <input type="submit" value="Send" />
+    </form>
+  </div>
+</section>
+
+<% include ./partials/footer %>
