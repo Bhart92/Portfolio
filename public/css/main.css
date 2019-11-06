@@ -17,7 +17,6 @@ body{
   background-attachment: fixed;
   background-size: cover;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
 }
 body::-webkit-scrollbar { /* WebKit */
@@ -84,7 +83,6 @@ a:hover, a:active, li:hover{
   width: 25%;
   background: rgba(39, 71, 99, .65);
   overflow-y: hidden;
-  scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
   z-index: 101!important;
 }
@@ -262,7 +260,6 @@ header{
   margin: 0 auto;
   height: 100%;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
 
 }
@@ -1309,7 +1306,4 @@ header{
     left: 0;
     padding-left: 0;
     }
-}
-@media print{
-
 }
