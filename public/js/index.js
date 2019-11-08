@@ -9,7 +9,10 @@ $(function(){
           type       : 'image',
           transition : 'fade in',
           duration   : 1500,
-          context: '#innerPortfolioContainer'
+          context: '#innerPortfolioContainer',
+          onLoad: function(){
+            $('.lds-facebook').css('display', 'none');
+          }
       })
     ;
     //

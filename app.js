@@ -70,6 +70,6 @@ app.get("*", function(req, res){
   res.redirect("/");
 });
 
-app.listen(port, function(){
+app.listen(3000, function(){
   console.log('live');
 });
