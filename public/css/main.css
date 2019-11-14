@@ -394,14 +394,16 @@ header{
   cursor: pointer;
 }
 #resumeSection{
+  padding: 2rem;
   width: 100%;
-  height: 150vh;
+  height: auto;
   background: darkgrey;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #innerResumeContainer{
+  padding-bottom: 2rem;
   box-shadow: 0px 1px 1px #858585;
   height: auto;
   width: 70%;
@@ -578,8 +580,7 @@ header{
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 3.5rem;
-  margin-top: .5rem;
+  margin-top: 1rem;
 }
 #innerEduContainer{
   width: 100%;
@@ -730,11 +731,16 @@ header{
     height: 40px;
   }
   #resumeSection {
-    height: 125vh;
+    height: 110vh;
+    padding: 2rem;
     }
     #secondContainer h1{
       margin: 1rem 0;
     }
+    #innerResumeContainer {
+    height: auto;
+    width: 75%;
+  }
     #innerResumeContainer a {
     font-size: 1rem;
     }
@@ -744,6 +750,10 @@ header{
   #secondContainer .experienceCard h2 {
       font-size: 1.35rem;
     }
+    #bottomResumeContainer {
+  margin-bottom: unset;
+    margin-top: 1.5rem;
+  }
     #bottomResumeContainer h1{
       margin-bottom: 1rem;
     }
@@ -756,10 +766,10 @@ header{
 }
 @media only screen and (width: 1024px) and (height: 1366px){
   #sideNav {
-      width: 35%;
+      width: 45%;
   }
   #topNavBox ul li a {
-    font-size: 1.5rem;
+    font-size: 1.85rem;
   }
 
   #mainHeaderContainer h2 {
@@ -778,18 +788,19 @@ header{
     font-size: 5.5rem;
   }
   #imgBox h2 {
-    font-size: 2.35rem;
+    font-size: 2.5rem;
   }
   #imgBox h3 {
     font-size: 1.5rem;
     text-align: center;
   }
   #imgBox img {
-    height: 50%;
+    height: 55%;
+    width: 100%;
   }
 
   .projectImageContainer {
-  height: 250px;
+  height: 350px;
   width: 100%;
   }
   .projectCard{
@@ -826,7 +837,8 @@ header{
     line-height: 30px;
   }
   .projectDescription p{
-    font-size: 1.5rem;
+    line-height: 27px;
+    font-size: 1.7rem;
     width: 95%;
     margin-top: unset;
   }
@@ -855,8 +867,8 @@ header{
     padding-left: 0;
     }
   #innerResumeContainer {
-    height: 90%;
-    width: 80%;
+    height: auto;
+    width: 100%;
     }
   #topResumeContainer {
     height: auto;
@@ -929,22 +941,72 @@ header{
     }
 }
 @media only screen and (max-width: 768px) and (min-height: 1024px){
-  #sideNav {
-      width: 35%;
-  }
-  #topNavBox ul li a {
-    font-size: 1.25rem;
+  body{flex-direction: column;}
+  #sideNav{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: unset;
+    }
+    #imgBox{
+      display: none;
+    }
+    #topNavBox{
+      display: none;
+    }
+    #bottomNavBox{display: none;}
+    #bottomNavBox a h1 {
+      font-size: 2.5rem;
+      padding: 11px;
+    }
+    #landingPage{
+      width: 100%;
+      height: 100%;
+    }
+    #BurgerContainerLogo{
+      justify-content: flex-start;
+      padding-left: 1rem;
+    }
+    #innerHeaderContainer {
+      margin-left: unset;
+      margin-top: unset;
+    }
+    #mainHeaderContainer {
+    align-items: center;
   }
   #mainHeaderContainer h1 {
-      font-size: 3.5rem;
+    font-size: 3.5rem;
   }
-  #mainHeaderContainer h2 {
-    font-size: 1.75rem;
-    width: 80%;
-  }
+    #mainHeaderContainer h2 {
+      width: 92%;
+      font-size: 2rem;
+    }
+    .hamburger{
+      display: block;
+    }
+    #HeaderButtonBox {
+      width: 80%;
+      margin: 1rem;
+      margin-left: 0;
+    }
+    #HeaderButtonBox a {
+      margin: unset;
+      font: 1.5rem;
+    }
   #HeaderButtonBox {
     width: 75%;
     justify-content: flex-start;
+  }
+  #portfolioSection {
+    width: 100%;
+  }
+  .projectImageContainer img {
+    width: 90%;
+  }
+  .projectDescription p {
+    line-height: 27px;
   }
   #HeaderButtonBox a{
     font-size: 1.2rem;
@@ -964,8 +1026,11 @@ header{
     height: 45%;
   }
   .projectImageContainer {
-  height: 250px;
+  height: 350px;
   width: 100%;
+  }
+  #contactSection {
+    width: 100%;
   }
   .projectCard{
     flex-direction: column;
@@ -1006,11 +1071,11 @@ header{
     margin-top: unset;
   }
   #contactForm {
-    width: 80%;
+    width: 70%;
     height: 55%;
   }
   #resumeSection{
-    height: 110vh;
+    height: 100vh;
   }
   #innerResumeContainer #goBack {
     top: 0;
@@ -1018,8 +1083,9 @@ header{
     font-size: 1rem;
     padding-left: 0;
     }
-  #innerResumeContainer {
-    height: auto;
+    #innerResumeContainer {
+        height: auto;
+        width: 100%;
     }
   #topResumeContainer {
     height: auto;
@@ -1181,8 +1247,8 @@ header{
       height: auto;
     }
     #innerResumeContainer {
-      height: 95%;
-      width: 90%;
+      height: auto;
+      width: 100%;
     }
     #topResumeContainer{
       flex-direction: column;

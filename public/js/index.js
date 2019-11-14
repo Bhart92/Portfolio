@@ -10,7 +10,7 @@ $(function(){
           transition : 'fade in',
           duration   : 1500,
           context: '#innerPortfolioContainer',
-          onLoad: function(){
+          onAllLoaded: function(){
             $('.lds-facebook').css('display', 'none');
           }
       })
