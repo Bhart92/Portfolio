@@ -105,7 +105,10 @@ a:hover, a:active, li:hover{
 #imgBox h2{
   color: rgba(255, 255, 255, 1);
   font-size: 1.5rem;
-  padding-top: 1rem;
+  padding-top: 0;
+}
+#imgBox img {
+  padding-top: 1.5rem;
 }
 #imgBox h3{
   color: rgba(255, 255, 255, .85);
