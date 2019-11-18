@@ -62,7 +62,6 @@ a:hover, a:active, li:hover{
   transition: height .5s ease-in-out,
             opacity .65s ease-in-out;
   z-index: 100;
-
 }
 #mobileNav ul{
   height: 70%;
